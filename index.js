@@ -14,7 +14,7 @@ async function fetchEKSVersion() {
       .match(/(?<version>\d+\.\d+)/).groups["version"];
 
     console.log(`Latest EKS Version: ${versionText}`);
-    core.setOutput("eks-version", versionText);
+    core.setOutput("latest", versionText);
   } catch (error) {
     console.error(`Failed to fetch EKS version: ${error}`);
     core.setFailed(`Action failed with error: ${error}`);

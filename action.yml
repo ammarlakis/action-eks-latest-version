@@ -1,7 +1,7 @@
 name: 'Latest EKS Version'
 description: 'Fetches the latest AWS EKS version'
 outputs:
-  version:
+  latest:
     description: 'The latest version of EKS'
 runs:
   using: 'node20'

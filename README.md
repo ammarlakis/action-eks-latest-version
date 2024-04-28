@@ -8,7 +8,7 @@ No inputs required.
 
 ## Outputs
 
-### `version`
+### `latest`
 
 The latest version of EKS.
 
@@ -41,7 +41,7 @@ jobs:
 
     - name: Compare EKS Version to 1.24
       run: |
-        if [ "$CURRENT_VERSION" = "${{ steps.eks-version.outputs.version }}" ]; then
+        if [ "$CURRENT_VERSION" = "${{ steps.eks-version.outputs.latest }}" ]; then
           echo "EKS is Up-to-date."
         else
           echo "A new update is available for EKS."
