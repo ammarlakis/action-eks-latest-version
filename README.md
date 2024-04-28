@@ -37,7 +37,7 @@ jobs:
 
     - name: Fetch Latest EKS Version
       id: eks-version
-      uses: ammalakis/action-eks-latest-version@master
+      uses: ammarlakis/action-eks-latest-version@master
 
     - name: Compare EKS Version to 1.24
       run: |
