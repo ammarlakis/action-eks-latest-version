@@ -1,0 +1,8 @@
+name: 'Latest EKS Version'
+description: 'Fetches the latest AWS EKS version'
+outputs:
+  version:
+    description: 'The latest version of EKS'
+runs:
+  using: 'node20'
+  main: 'index.js'
