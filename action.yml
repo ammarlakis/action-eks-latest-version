@@ -5,4 +5,4 @@ outputs:
     description: 'The latest version of EKS'
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'dist/index.js'
