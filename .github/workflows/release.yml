@@ -14,3 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: ncipollo/release-action@v1
+    - uses: tgymnich/publish-github-action@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
