@@ -3,6 +3,9 @@ description: 'Fetches the latest AWS EKS version'
 outputs:
   latest:
     description: 'The latest version of EKS'
+branding:
+  color: blue
+  icon: arrow-up-circle
 runs:
   using: 'node20'
   main: 'dist/index.js'
